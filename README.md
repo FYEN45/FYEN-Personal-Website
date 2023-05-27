@@ -2,8 +2,6 @@
 
 ## Tech Stacks
 
----
-
 - HTML
 - Tailwind
 - Javascript
