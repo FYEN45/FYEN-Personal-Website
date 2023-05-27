@@ -1,7 +1,6 @@
 # FYEN Personal Website
 
-## Tech Stacks
-
+Tech Stacks
 - HTML
 - Tailwind
 - Javascript
