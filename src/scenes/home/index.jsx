@@ -13,11 +13,17 @@ import logo_vscode from '../../assets/logo/vscode.png';
 import logo_github from '../../assets/logo/github.png';
 import logo_chatgpt from '../../assets/logo/chatgpt.png';
 
-import contact_whatsapp from '../../assets/contacts/whatsapp.png';
-import contact_telegram from '../../assets/contacts/telegram.png';
-import contact_linkedin from '../../assets/contacts/linkedin.png';
-import contact_instagram from '../../assets/contacts/instagram.png';
-import contact_gmail from '../../assets/contacts/gmail.png';
+// Icon Source : iconmonstr
+import icon_telegram from '../../assets/icons/icon-telegram.png';
+import icon_mail from '../../assets/icons/icon-mail.png';
+import icon_whatsapp from '../../assets/icons/icon-whatsapp.png';
+import icon_linkedin from '../../assets/icons/icon-linkedin.png';
+import icon_github from '../../assets/icons/icon-github.png';
+import icon_instagram from '../../assets/icons/icon-instagram.png';
+import icon_plane from '../../assets/icons/icon-plane.png';
+
+import project1 from '../../assets/projects/project1.png';
+import project2 from '../../assets/projects/project2.png';
 
 const Home = () => {
 	return (
@@ -249,7 +255,7 @@ const Home = () => {
 				</div>
 
 				{/* Project List */}
-				<div className="mx-auto mt-12 grid max-w-3xl grid-cols-1 place-items-center gap-6 md:grid-cols-2">
+				<div className="mx-auto mt-12 grid max-w-3xl grid-cols-1 place-items-center gap-6">
 					{/* 
 					Kuliah
 					- Skripsi Website Prediksi Penjualan
@@ -281,17 +287,74 @@ const Home = () => {
 					- Social Media App
 					- Admin Dashboard
 					 */}
-					<div className="aspect-video h-full w-full bg-gray-500">
-						Example Project
+
+					{/*PROJECT 1 - FYEN PERSONAL WEBSITE  */}
+					<div className="group relative aspect-video bg-slate-800 p-0.5">
+						<img
+							src={project1}
+							alt="Personal Website"
+							className="h-full w-full object-cover"
+						/>
+
+						<div className="absolute inset-0 flex flex-col items-center justify-center gap-1 bg-slate-800 bg-opacity-80 opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100">
+							<span className="text-1xl font-semibold text-white sm:text-2xl">
+								Personal Website
+							</span>
+
+							<span className="mt-1 text-xs font-normal text-white sm:text-sm">
+								HTML | Tailwind | Javascript | React
+							</span>
+
+							<div className="mt-3 flex gap-2">
+								<a
+									href="https://fyen-personal-website.onrender.com/"
+									target="_blank"
+									rel="noopener noreferrer"
+									className="flex aspect-square h-10 w-10 items-center justify-center bg-slate-100 p-2"
+								>
+									<img src={icon_plane} alt="FYEN Personal Website" />
+								</a>
+
+								<a
+									href="https://github.com/FYEN45/FYEN-Personal-Website"
+									target="_blank"
+									rel="noopener noreferrer"
+									className="flex aspect-square h-10 w-10 items-center justify-center bg-slate-100 p-2"
+								>
+									<img src={icon_github} alt="Github" />
+								</a>
+							</div>
+						</div>
 					</div>
-					<div className="aspect-video h-full w-full bg-gray-500">
-						Example Project
-					</div>
-					<div className="aspect-video h-full w-full bg-gray-500">
-						Example Project
-					</div>
-					<div className="aspect-video h-full w-full bg-gray-500">
-						Example Project
+
+					{/* PROJECT 2 - WEBSITE PREDIKSI PENJUALAN */}
+					<div className="group relative aspect-video bg-slate-800 p-0.5">
+						<img
+							src={project2}
+							alt="Personal Website"
+							className="h-full w-full object-cover"
+						/>
+
+						<div className="absolute inset-0 flex flex-col items-center justify-center gap-1 bg-slate-800 bg-opacity-80 opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100">
+							<span className="text-1xl font-semibold text-white sm:text-2xl">
+								Website Prediksi Penjualan
+							</span>
+
+							<span className="mt-1 text-xs font-normal text-white sm:text-sm">
+								Javascript | React | Material UI | NodeJS | MySQL
+							</span>
+
+							<div className="mt-3 flex gap-2">
+								<a
+									href="https://github.com/FYEN45/Website-Prediksi-Penjualan"
+									target="_blank"
+									rel="noopener noreferrer"
+									className="flex aspect-square h-10 w-10 items-center justify-center bg-slate-100 p-2"
+								>
+									<img src={icon_github} alt="Github" />
+								</a>
+							</div>
+						</div>
 					</div>
 				</div>
 
@@ -321,54 +384,54 @@ const Home = () => {
 							href="mailto:ferrygun45@gmail.com"
 							target="_blank"
 							rel="noopener noreferrer"
-							className="py-auto flex aspect-square w-auto items-center bg-slate-100 px-1"
+							className="flex aspect-square w-full items-center justify-center bg-slate-100 px-2"
 						>
-							<img src={contact_gmail} alt="Email" />
+							<img src={icon_mail} alt="Email" />
 						</a>
 
 						<a
 							href="https://api.whatsapp.com/send?phone=6281297507252"
 							target="_blank"
 							rel="noopener noreferrer"
-							className="aspect-square w-auto bg-slate-100 p-1"
+							className="flex aspect-square w-full items-center justify-center bg-slate-100 p-2"
 						>
-							<img src={contact_whatsapp} alt="Whatsapp" />
+							<img src={icon_whatsapp} alt="Whatsapp" />
 						</a>
 
 						<a
 							href="https://t.me/FerryGun45"
 							target="_blank"
 							rel="noopener noreferrer"
-							className="aspect-square w-auto bg-slate-100 p-1"
+							className="flex aspect-square w-full items-center justify-center bg-slate-100 p-2"
 						>
-							<img src={contact_telegram} alt="Telegram" />
+							<img src={icon_telegram} alt="Telegram" />
 						</a>
 
 						<a
 							href="https://www.linkedin.com/in/ferry-gunawan45/"
 							target="_blank"
 							rel="noopener noreferrer"
-							className="aspect-square w-auto bg-slate-100 p-1"
+							className="flex aspect-square w-full items-center justify-center bg-slate-100 p-2"
 						>
-							<img src={contact_linkedin} alt="LinkedIn" />
+							<img src={icon_linkedin} alt="LinkedIn" />
 						</a>
 
 						<a
 							href="https://github.com/FYEN45"
 							target="_blank"
 							rel="noopener noreferrer"
-							className="aspect-square w-auto bg-slate-100 p-1"
+							className="flex aspect-square w-full items-center justify-center bg-slate-100 p-2"
 						>
-							<img src={logo_github} alt="Github" />
+							<img src={icon_github} alt="Github" />
 						</a>
 
 						<a
 							href="https://www.instagram.com/ferrygun45/"
 							target="_blank"
 							rel="noopener noreferrer"
-							className="aspect-square w-auto bg-slate-100 p-1"
+							className="flex aspect-square w-full items-center justify-center bg-slate-100 p-2"
 						>
-							<img src={contact_instagram} alt="Instagram" />
+							<img src={icon_instagram} alt="Instagram" />
 						</a>
 					</div>
 				</div>

@@ -3,6 +3,7 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './scenes/home/index.jsx';
 import Projects from './scenes/projects/index.jsx';
+import Certificates from './scenes/certificates';
 
 function App() {
 	return (
@@ -12,7 +13,9 @@ function App() {
 			<BrowserRouter>
 				<Routes>
 					<Route exact path="/" element={<Home />} />
-					{/* <Route path="/projects" element={<Projects />} /> */}
+
+					<Route path="/projects" element={<Projects />} />
+					<Route path="/certificates" element={<Certificates />} />
 				</Routes>
 			</BrowserRouter>
 			<Footer />
