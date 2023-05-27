@@ -1,11 +1,14 @@
 # FYEN Personal Website
 
-Tech Stacks :
+## Tech Stacks
+
+---
 
 - HTML
 - Tailwind
 - Javascript
 - React
 
-[FYEN Personal Website](https://fyen-personal-website.onrender.com/)
+## [FYEN Personal Website](https://fyen-personal-website.onrender.com/)
+
 Hosted on : [Render.com](https://render.com/)
