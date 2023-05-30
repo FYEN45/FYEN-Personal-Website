@@ -4,6 +4,7 @@ import Footer from './components/Footer';
 import Home from './scenes/home/index.jsx';
 import Projects from './scenes/projects/index.jsx';
 import Certificates from './scenes/certificates';
+import Contacts from './components/Contacts';
 
 function App() {
 	return (
@@ -18,6 +19,7 @@ function App() {
 					<Route path="/certificates" element={<Certificates />} />
 				</Routes>
 			</BrowserRouter>
+			<Contacts />
 			<Footer />
 		</div>
 	);

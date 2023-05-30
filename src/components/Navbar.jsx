@@ -13,7 +13,7 @@ const Navbar = () => {
 	};
 
 	useEffect(() => {
-		const scrollToTopBtn = document.getElementById('scrollToTop');
+		const scrollToTopBtn = document.getElementById('scrollToTopButton');
 		const navbar = document.getElementById('navbar');
 
 		const handleScroll = () => {
@@ -21,9 +21,9 @@ const Navbar = () => {
 			const scrollY = window.scrollY;
 
 			if (scrollY > navbarHeight) {
-				scrollToTopBtn.classList.add('opacity-100');
+				scrollToTopBtn.classList.remove('hidden');
 			} else {
-				scrollToTopBtn.classList.remove('opacity-100');
+				scrollToTopBtn.classList.add('hidden');
 			}
 		};
 
@@ -45,7 +45,7 @@ const Navbar = () => {
 			{/* BACK TO TOP */}
 			<div id="scrollToTop" className="fixed bottom-14 w-full">
 				<div className="mx-auto flex w-full max-w-6xl justify-end align-middle">
-					<button className="">
+					<button className="hidden" id="scrollToTopButton">
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
 							fill="none"
@@ -76,7 +76,13 @@ const Navbar = () => {
 				{/* NAVBAR DESKTOP */}
 				<div className=" hidden items-center md:flex">
 					<button
-						onClick={() => scrollToElement('aboutme')}
+						onClick={() => {
+							if (document.getElementById('aboutme')) {
+								scrollToElement('aboutme');
+							} else {
+								window.location.href = '/#aboutme';
+							}
+						}}
 						className="text-xl text-gray-100 hover:border-b hover:border-b-gray-100"
 					>
 						ABOUT ME
@@ -126,8 +132,12 @@ const Navbar = () => {
 							<div className=" border-b-2 border-b-gray-100 p-4">
 								<button
 									onClick={() => {
-										toggleMenu();
-										scrollToElement('aboutme');
+										if (document.getElementById('aboutme')) {
+											toggleMenu();
+											scrollToElement('aboutme');
+										} else {
+											window.location.href = '/#aboutme';
+										}
 									}}
 									className="text-2xl text-gray-100"
 								>
