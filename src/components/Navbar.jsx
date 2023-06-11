@@ -21,9 +21,11 @@ const Navbar = () => {
 			const scrollY = window.scrollY;
 
 			if (scrollY > navbarHeight) {
-				scrollToTopBtn.classList.remove('hidden');
+				scrollToTopBtn.classList.remove('opcatiy-0');
+				scrollToTopBtn.classList.add('opacity-100');
 			} else {
-				scrollToTopBtn.classList.add('hidden');
+				scrollToTopBtn.classList.add('opacity-0');
+				scrollToTopBtn.classList.remove('opacity-100');
 			}
 		};
 
@@ -45,7 +47,10 @@ const Navbar = () => {
 			{/* BACK TO TOP */}
 			<div id="scrollToTop" className="fixed bottom-14 w-full">
 				<div className="mx-auto flex w-full max-w-6xl justify-end align-middle">
-					<button className="hidden" id="scrollToTopButton">
+					<button
+						className="opacity-0 transition-opacity"
+						id="scrollToTopButton"
+					>
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
 							fill="none"
@@ -75,7 +80,7 @@ const Navbar = () => {
 
 				{/* NAVBAR DESKTOP */}
 				<div className=" hidden items-center md:flex">
-					<button
+					{/* <button
 						onClick={() => {
 							if (document.getElementById('aboutme')) {
 								scrollToElement('aboutme');
@@ -86,13 +91,19 @@ const Navbar = () => {
 						className="text-xl text-gray-100 hover:border-b hover:border-b-gray-100"
 					>
 						ABOUT ME
-					</button>
-
+					</button> */}
 					<button
-						onClick={() => scrollToElement('projects')}
+						onClick={() => (window.location.href = '/projects')}
 						className="ml-4 text-xl text-gray-100 hover:border-b hover:border-b-gray-100"
 					>
 						PROJECTS
+					</button>
+
+					<button
+						onClick={() => (window.location.href = '/certificates')}
+						className="ml-4 text-xl text-gray-100 hover:border-b hover:border-b-gray-100"
+					>
+						CERTIFICATES
 					</button>
 
 					<button
@@ -129,7 +140,7 @@ const Navbar = () => {
 				{isMenuOpen && (
 					<div className="fixed inset-0 z-50 flex h-screen w-screen items-center justify-center bg-slate-900 bg-opacity-90 md:hidden">
 						<div className="flex flex-col items-center justify-center gap-2">
-							<div className=" border-b-2 border-b-gray-100 p-4">
+							{/* <div className=" border-b-2 border-b-gray-100 p-4">
 								<button
 									onClick={() => {
 										if (document.getElementById('aboutme')) {
@@ -143,17 +154,29 @@ const Navbar = () => {
 								>
 									ABOUT ME
 								</button>
+							</div> */}
+
+							<div className="border-b-2 border-b-gray-100 p-4">
+								<button
+									onClick={() => {
+										toggleMenu();
+										window.location.href = '/projects';
+									}}
+									className="text-2xl text-gray-100"
+								>
+									PROJECTS
+								</button>
 							</div>
 
 							<div className="border-b-2 border-b-gray-100 p-4">
 								<button
 									onClick={() => {
 										toggleMenu();
-										scrollToElement('projects');
+										window.location.href = '/certificates';
 									}}
 									className="text-2xl text-gray-100"
 								>
-									PROJECTS
+									CERTIFICATES
 								</button>
 							</div>
 

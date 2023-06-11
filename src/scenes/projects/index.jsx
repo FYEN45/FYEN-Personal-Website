@@ -8,7 +8,10 @@ import project2 from '../../assets/projects/project2.png';
 import project3 from '../../assets/projects/project3.png';
 import project4 from '../../assets/projects/project4.png';
 import project5 from '../../assets/projects/project5.png';
-import Contacts from '../../components/Contacts';
+import project6 from '../../assets/projects/project6.png';
+import project7 from '../../assets/projects/project7.png';
+import project8 from '../../assets/projects/project8.png';
+import project9 from '../../assets/projects/project9.png';
 
 const Projects = () => {
 	return (
@@ -34,8 +37,8 @@ const Projects = () => {
 						projectImage={project1}
 						projectTitle="Personal Website"
 						projectStacks="React | Tailwind | Javascript"
-						directLink="https://fyen-personal-website.onrender.com/"
 						githubLink="https://github.com/FYEN45/FYEN-Personal-Website"
+						directLink="https://fyen-personal-website.onrender.com/"
 					/>
 
 					{/* PROJECT 2 - WEBSITE PREDIKSI PENJUALAN */}
@@ -43,8 +46,8 @@ const Projects = () => {
 						projectImage={project2}
 						projectTitle="Website Prediksi Penjualan"
 						projectStacks="React | Material UI | NodeJS | Express | MySQL"
-						directLink=""
 						githubLink="https://github.com/FYEN45/Website-Prediksi-Penjualan"
+						directLink=""
 					/>
 
 					{/* PROJECT 3 - Analytics Landing Page */}
@@ -73,7 +76,67 @@ const Projects = () => {
 						githubLink="https://github.com/FYEN45/Admin-Dashboard"
 						directLink="https://fe-admin-dashboard.onrender.com/"
 					/>
+
+					{/* PROJECT 6 - Sewa Kamar Hotel */}
+					<Project
+						projectImage={project6}
+						projectTitle="Sewa Kamar Hotel"
+						projectStacks="HTML | CSS | Bootstrap | Python | Flask | MySQL"
+						githubLink="https://github.com/FYEN45/UAS-PWFP-SewaKamarHotel"
+						directLink=""
+					/>
+
+					{/* PROJECT 7 - Perpustakaan Gramedia */}
+					<Project
+						projectImage={project7}
+						projectTitle="Perpustakaan Gramedia"
+						projectStacks="HTML | CSS | Bootstrap | Python | Flask | MySQL"
+						githubLink="https://github.com/FYEN45/UTS-PWFP-PerpustakaanGramedia"
+						directLink=""
+					/>
+
+					{/* PROJECT 8 - Katalog Mobil */}
+					<Project
+						projectImage={project9}
+						projectTitle="Katalog Mobil"
+						projectStacks="Android | Java | PHP | MySQL"
+						githubLink="https://github.com/FYEN45/UTS-PM-KatalogMobil"
+						directLink=""
+					/>
+
+					{/* PROJECT 9 - Genshin Impact Wiki */}
+					<Project
+						projectImage={project8}
+						projectTitle="Genshin Impact Wiki"
+						projectStacks="Android | Java | PHP | MySQL"
+						githubLink="https://github.com/FYEN45/UAS-PM-JenshinWiki"
+						directLink=""
+					/>
 				</div>
+
+				{/* 
+						// Kuliah
+						// - PWFP Daftar Mahasiswa ??
+						// - PM JenshinWiki
+						// - PM Katalog Mobil
+						// - Unity KeruvinSchool
+						// - Unity Shooter (lupa namanya)
+						// - AR Genshin Impact AR
+
+						// FCC - Responsive Website (Bagusin dikit smuanya)
+						// - Survey Form
+						// - Tribute Page
+						// - Technical Documentation
+						// - Product Landing Page
+						// - Personal Portofolio
+
+						// FCC - Javascript (Bikin ulang semua)
+						// - Palindrome Checker
+						// - Roman Numeral Converter
+						// - Caesars Cipher
+						// - Telephone Number Validator
+						// - Cash Register
+				*/}
 
 				<div className="mt-12 flex items-center justify-center">
 					<span className="text-center text-2xl font-semibold">

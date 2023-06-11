@@ -66,33 +66,3 @@ const Project = ({
 };
 
 export default Project;
-
-// Kuliah
-// - Skripsi Website Prediksi Penjualan
-// - PWFP Sewa Kamar Hotel
-// - PWFP Perpus Gramedia
-// - PWFP Daftar Mahasiswa
-// - PM JenshinWiki
-// - PM Katalog Mobil
-// - Unity KeruvinSchool
-// - Unity Shooter (lupa namanya)
-// - AR Genshin Impact AR
-
-// MERN (Desain ulang warna / fontnya?)
-// - Analytics Landing Page
-// - Social Media App
-// - Admin Dashboard
-
-// FCC - Responsive Website (Bagusin dikit smuanya)
-// - Survey Form
-// - Tribute Page
-// - Technical Documentation
-// - Product Landing Page
-// - Personal Portofolio
-
-// FCC - Javascript (Bikin ulang semua)
-// - Palindrome Checker
-// - Roman Numeral Converter
-// - Caesars Cipher
-// - Telephone Number Validator
-// - Cash Register
