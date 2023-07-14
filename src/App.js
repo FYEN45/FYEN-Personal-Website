@@ -16,7 +16,7 @@ function App() {
 					<Route exact path="/" element={<Home />} />
 
 					<Route path="/projects" element={<Projects />} />
-					<Route path="/certificates" element={<Certificates />} />
+					{/* <Route path="/certificates" element={<Certificates />} /> */}
 				</Routes>
 			</BrowserRouter>
 			<Contacts />

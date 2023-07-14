@@ -99,12 +99,24 @@ const Navbar = () => {
 						PROJECTS
 					</button>
 
-					<button
-						onClick={() => (window.location.href = '/certificates')}
+					{/* <button
+						onClick={() =>
+							(window.location.href =
+								'https://drive.google.com/drive/folders/1LTjwgm2kPJFbINAYdnOHmjhfmdVdjsT7?usp=sharing')
+						}
 						className="ml-4 text-xl text-gray-100 hover:border-b hover:border-b-gray-100"
 					>
 						CERTIFICATES
-					</button>
+					</button> */}
+
+					<a
+						href="https://drive.google.com/drive/folders/1LTjwgm2kPJFbINAYdnOHmjhfmdVdjsT7?usp=sharing"
+						target="_blank"
+						rel="noopener noreferrer"
+						className="ml-4 text-xl text-gray-100 hover:border-b hover:border-b-gray-100"
+					>
+						CERTIFICATES
+					</a>
 
 					<button
 						onClick={() => scrollToElement('contact')}
@@ -169,15 +181,25 @@ const Navbar = () => {
 							</div>
 
 							<div className="border-b-2 border-b-gray-100 p-4">
-								<button
+								<a
+									href="https://drive.google.com/drive/folders/1LTjwgm2kPJFbINAYdnOHmjhfmdVdjsT7?usp=sharing"
+									target="_blank"
+									rel="noopener noreferrer"
+									className="text-2xl text-gray-100"
+								>
+									CERTIFICATES
+								</a>
+
+								{/* <button
 									onClick={() => {
 										toggleMenu();
-										window.location.href = '/certificates';
+										window.location.href =
+											'https://drive.google.com/drive/folders/1LTjwgm2kPJFbINAYdnOHmjhfmdVdjsT7?usp=sharing';
 									}}
 									className="text-2xl text-gray-100"
 								>
 									CERTIFICATES
-								</button>
+								</button> */}
 							</div>
 
 							<div className="border-b-2 border-b-gray-100 p-4">
