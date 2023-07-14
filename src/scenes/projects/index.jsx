@@ -12,6 +12,7 @@ import project6 from '../../assets/projects/project6.png';
 import project7 from '../../assets/projects/project7.png';
 import project8 from '../../assets/projects/project8.png';
 import project9 from '../../assets/projects/project9.png';
+import project10 from '../../assets/projects/project10.png';
 
 const Projects = () => {
 	return (
@@ -47,6 +48,15 @@ const Projects = () => {
 						projectTitle="Website Prediksi Penjualan"
 						projectStacks="React | Material UI | NodeJS | Express | MySQL"
 						githubLink="https://github.com/FYEN45/Website-Prediksi-Penjualan"
+						directLink=""
+					/>
+
+					{/* PROJECT 10 - Spring Restfull API*/}
+					<Project
+						projectImage={project10}
+						projectTitle="Spring RESTfull API"
+						projectStacks="Spring | Java"
+						githubLink="https://github.com/FYEN45/spring-restfull-api"
 						directLink=""
 					/>
 
@@ -116,9 +126,6 @@ const Projects = () => {
 
 				{/* 
 						// Kuliah
-						// - PWFP Daftar Mahasiswa ??
-						// - PM JenshinWiki
-						// - PM Katalog Mobil
 						// - Unity KeruvinSchool
 						// - Unity Shooter (lupa namanya)
 						// - AR Genshin Impact AR
@@ -129,13 +136,6 @@ const Projects = () => {
 						// - Technical Documentation
 						// - Product Landing Page
 						// - Personal Portofolio
-
-						// FCC - Javascript (Bikin ulang semua)
-						// - Palindrome Checker
-						// - Roman Numeral Converter
-						// - Caesars Cipher
-						// - Telephone Number Validator
-						// - Cash Register
 				*/}
 
 				<div className="mt-12 flex items-center justify-center">
