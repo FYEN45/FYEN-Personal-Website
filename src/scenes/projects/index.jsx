@@ -13,6 +13,7 @@ import project7 from '../../assets/projects/project7.png';
 import project8 from '../../assets/projects/project8.png';
 import project9 from '../../assets/projects/project9.png';
 import project10 from '../../assets/projects/project10.png';
+import project11 from '../../assets/projects/project11.png';
 
 const Projects = () => {
 	return (
@@ -51,7 +52,16 @@ const Projects = () => {
 						directLink=""
 					/>
 
-					{/* PROJECT 10 - Spring Restfull API*/}
+					{/* PROJECT 11 - Omnifood */}
+					<Project
+						projectImage={project10}
+						projectTitle="Omnifood"
+						projectStacks="HTML | CSS | Javascript"
+						githubLink="https://github.com/FYEN45/Omnifood"
+						directLink="https://fyen45.github.io/Omnifood/"
+					/>
+
+					{/* PROJECT 10 - Spring Restfull API */}
 					<Project
 						projectImage={project10}
 						projectTitle="Spring RESTfull API"
