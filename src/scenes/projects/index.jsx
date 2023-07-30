@@ -54,7 +54,7 @@ const Projects = () => {
 
 					{/* PROJECT 11 - Omnifood */}
 					<Project
-						projectImage={project10}
+						projectImage={project11}
 						projectTitle="Omnifood"
 						projectStacks="HTML | CSS | Javascript"
 						githubLink="https://github.com/FYEN45/Omnifood"
